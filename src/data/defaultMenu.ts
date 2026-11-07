@@ -1,0 +1,163 @@
+import { MenuItem, SiteSettings } from '../types';
+
+export const DEFAULT_MENU_ITEMS: MenuItem[] = [
+  {
+    id: 'shw-01',
+    name: 'شاورما دجاج بست كباب (سوبر صاج)',
+    nameEn: 'Best Kebab Super Chicken Shawarma',
+    category: 'shawarma',
+    price: 450,
+    description: 'شرائح صدور دجاج متبلة بخلطة بست كباب السرية ملفوفة بخبز الصاج المحمص مع صوص الثومية والمخلل المقرمش',
+    descriptionEn: 'Tender spiced chicken breast shavings in crispy toasted saj bread with signature garlic toum and pickles',
+    image: '/src/assets/images/product_shawarma_plate_1794092914661.jpg',
+    badge: 'الأكثر طلباً',
+    calories: 520,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000001
+  },
+  {
+    id: 'shw-02',
+    name: 'شاورما لحم عجل بلدي فاخر',
+    nameEn: 'Prime Veal Shawarma Sandwich',
+    category: 'shawarma',
+    price: 650,
+    description: 'لحم عجل متبل بالخلطة الأصيلة مع البقدونس والبصل بالسماق وصوص الطحينة المحمصة الفاخرة',
+    descriptionEn: 'Marinated prime veal strips with sumac onions, fresh parsley and premium roasted tahini sauce',
+    image: '/src/assets/images/product_shawarma_beef_1794092913776.jpg',
+    badge: 'اختيار الشيف',
+    calories: 580,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000002
+  },
+  {
+    id: 'keb-01',
+    name: 'مشاوي كباب مشكل على الفحم',
+    nameEn: 'Mixed Charcoal Kebab Platter',
+    category: 'kebab',
+    price: 1200,
+    description: 'ثلاثة أسياخ من كباب اللحم البلدي وكباب الدجاج المتبل مع خضار مشوية، طماطم، فلفل حار، وثومية وخبز التنور',
+    descriptionEn: 'Tender lamb & chicken skewers grilled on natural charcoal with roasted veggies, garlic whip and fresh pita',
+    image: '/src/assets/images/product_kebab_platter_1794092914594.jpg',
+    badge: 'مشوي على الفحم',
+    calories: 780,
+    spicy: true,
+    isAvailable: true,
+    createdAt: 1700000000003
+  },
+  {
+    id: 'plt-01',
+    name: 'سرفيس شاورما عربي ملكي',
+    nameEn: 'Royal Arabic Shawarma Box Plate',
+    category: 'platters',
+    price: 850,
+    description: 'ساندوتش شاورما كبير مقطع لقمات ذهبية يقدم مع بطاطس مقلية مقرمشة، علبة ثومية بست كباب، مخلل، وصوص حار',
+    descriptionEn: 'Sliced shawarma roll served with golden crispy french fries, signature garlic whip, pickles and chili sauce',
+    image: '/src/assets/images/product_shawarma_plate_1794092914661.jpg',
+    badge: 'وجبة متكاملة',
+    calories: 890,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000004
+  },
+  {
+    id: 'keb-02',
+    name: 'كباب أورفلي بالباذنجان المشوي',
+    nameEn: 'Urfali Kebab with Roasted Eggplant',
+    category: 'kebab',
+    price: 1100,
+    description: 'لحم خروف مفروم باليد مع فلفل رومي أحمر وباذنجان مدخن مشوي على الجمر مع تتبيلة خاصة',
+    descriptionEn: 'Hand-minced lamb with sweet red pepper and fire-smoked eggplant, grilled on skewers',
+    image: '/src/assets/images/hero_shawarma_kebab_1794092913794.jpg',
+    badge: 'جديد',
+    calories: 720,
+    spicy: true,
+    isAvailable: true,
+    createdAt: 1700000000005
+  },
+  {
+    id: 'plt-02',
+    name: 'صحن كباب دجاج بالزعتر والليمون',
+    nameEn: 'Lemon & Thyme Chicken Kebab Plate',
+    category: 'platters',
+    price: 950,
+    description: 'أسياخ دجاج متبلة بالزعتر البري وزيت الزيتون والليمون تقدم مع أرز بسمتي بالزعفران وصلصة الثوم المحمص',
+    descriptionEn: 'Tender chicken kebab infused with wild thyme and lemon, served with saffron basmati rice',
+    image: '/src/assets/images/product_kebab_platter_1794092914594.jpg',
+    calories: 640,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000006
+  },
+  {
+    id: 'app-01',
+    name: 'حمص بيروتي بالشاورما والمكسرات',
+    nameEn: 'Hommus with Shawarma & Pine Nuts',
+    category: 'appetizers',
+    price: 550,
+    description: 'حمص ناعم بزيت الزيتون البكر مع قطع شاورما لحم ساخنة ومكسرات محمصة مع رشة سماق',
+    descriptionEn: 'Velvety artisanal hummus topped with hot beef shawarma shavings, roasted pine nuts & sumac',
+    image: '/src/assets/images/product_shawarma_beef_1794092913776.jpg',
+    badge: 'مقبلات ساخنة',
+    calories: 460,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000007
+  },
+  {
+    id: 'fam-01',
+    name: 'بوكس اللمة العائلي بست كباب (6 أشخاص)',
+    nameEn: 'Best Kebab Mega Family Feast',
+    category: 'family',
+    price: 2800,
+    description: '4 ساندوتش شاورما كبير مقطع + 4 أسياخ كباب مشكل + طبق بطاطس عائلي + 4 علب صوصات متنوعة + لتر ونصف كولا بارد',
+    descriptionEn: 'Mega sharing combo with 4 large shawarma rolls cut, 4 mixed kebab skewers, jumbo fries and family beverage',
+    image: '/src/assets/images/hero_shawarma_kebab_1794092913794.jpg',
+    badge: 'توفير عائلي',
+    calories: 2400,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000008
+  },
+  {
+    id: 'drk-01',
+    name: 'عصير ليموناضة بالنعناع طازج مثلج',
+    nameEn: 'Fresh Frozen Mint Lemonade',
+    category: 'drinks',
+    price: 250,
+    description: 'ليمون طازج معصور يومياً مع أوراق النعناع الأخضر والثلج المجروش لإنعاش حقيقي مع كل لقمة',
+    descriptionEn: 'Daily fresh squeezed citrus with organic fresh mint and crushed ice',
+    image: '/src/assets/images/hero_shawarma_kebab_1794092913794.jpg',
+    calories: 140,
+    spicy: false,
+    isAvailable: true,
+    createdAt: 1700000000009
+  }
+];
+
+export const DEFAULT_SITE_SETTINGS: SiteSettings = {
+  restaurantName: 'Best Kebab',
+  restaurantSubtitle: 'بست كباب الأصلي',
+  heroHeadline: 'أشهى شاورما وكباب على أصولها.. نكهة لا تُنسى',
+  heroSubtitle: 'نقدم لكم ساندوتشات شاورما الدجاج واللحم البلدي بخبز الصاج المحمص، مع أسياخ الكباب المتبل المشوي على الفحم الطبيعي وصوص الثومية الخاص بنا.',
+  heroImage: '/src/assets/images/hero_shawarma_kebab_1794092913794.jpg',
+  phone: '0555 12 34 56',
+  whatsapp: '0770 98 76 54',
+  workingHours: 'يومياً من 11:30 صباحاً حتى 01:30 ليلاً',
+  mainAddress: 'الجزائر العاصمة - حي ديدوش مراد (وسط المدينة)',
+  secondAddress: 'وهران - حي العقيد لطفي / سطيف - شارع 8 ماي 1945',
+  deliveryFee: 200, // 200 DZD
+  freeDeliveryThreshold: 1800, // Free delivery above 1800 DZD
+  aboutTitle: 'لماذا يعتبر Best Kebab المطعم المفضل لعشاق الشاورما والمشاوي؟',
+  aboutText: 'في بست كباب نضمن لكم الجودة والنظافة العالية باختيار أجود اللحوم والدواجن الطازجة المذبوحة محلياً يومياً، ونقعها لمدة 24 ساعة بخلطة من 14 نوعاً من التوابل والبهارات الأصيلة وشويها على الجمر لتقديم أطيب طعم يرضي ذوقكم.',
+  announcementText: '🔥 مرحباً بكم في Best Kebab! توصيل سريع متوفر والدفع نقداً عند الاستلام فقط (كاش عند الباب)',
+  showAnnouncement: true,
+};
+
+export const PRESET_IMAGES = [
+  { label: 'شاورما دجاج صاج مقرمش', url: '/src/assets/images/product_shawarma_plate_1794092914661.jpg' },
+  { label: 'شاورما لحم بلدي مع طحينة', url: '/src/assets/images/product_shawarma_beef_1794092913776.jpg' },
+  { label: 'مشاوي كباب على الفحم', url: '/src/assets/images/product_kebab_platter_1794092914594.jpg' },
+  { label: 'وليمة بست كباب الفاخرة', url: '/src/assets/images/hero_shawarma_kebab_1794092913794.jpg' },
+];

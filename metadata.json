@@ -1,0 +1,6 @@
+{
+  "name": "Best Kebab - بست كباب",
+  "description": "مطعم الشاورما والكباب الأشهى والأشهر - طلب أونلاين، قائمة فاخرة، ولوحة إدارة سرية لإضافة المنتجات والصور",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
